@@ -13,13 +13,18 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            VStack{
-                Text("Welcome _____ to Fitness Vision!")
-                .font(.largeTitle)
-                .multilineTextAlignment(.center)
-                .padding()
-                Spacer()
-            }.padding()
+            ZStack{
+                // Arbitrary color - feel free to design 
+                Color(red: 0.4627, green: 0.8392, blue: 1.0)
+                    .edgesIgnoringSafeArea(.all)
+                VStack{
+                    Text("Welcome _____ to Fitness Vision!")
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    Spacer()
+                }.padding()
+            }
         }
     }
 
